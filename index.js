@@ -6,7 +6,7 @@ module.exports = function TowerCount(dispatch) {
 
   let destroyedTowers = {}
 
-  dispatch.hook('S_DESTROY_GUILD_TOWER', 1, {filter:{fake: null}}, (event) => {
+  dispatch.hook('S_DESTROY_GUILD_TOWER', 1, (event) => {
     if (destroyedTowers[event.sourceGuildName]) {
       destroyedTowers[event.sourceGuildName] += 1
     } else {
@@ -20,19 +20,7 @@ module.exports = function TowerCount(dispatch) {
     })
   })
 
-  command.add('destroy', (name, source, target) => {
-    dispatch.toClient('S_DESTROY_GUILD_TOWER', 1, {
-      loc: new Vec3(1,2,3),
-      sourceGuildId: 123,
-      targetGuildId: 345,
-      sourceGuildName: source,
-      name: name,
-      targetGuildName: target
-    })
-  })
-
   this.destructor = function() {
     command.remove('towers')
-    command.remove('destroy')
   }
 }
