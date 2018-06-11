@@ -1,5 +1,4 @@
 const Command = require('command')
-const Vec3 = require('tera-vec3')
 
 module.exports = function TowerCount(dispatch) {
   const command = Command(dispatch)
