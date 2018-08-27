@@ -1,4 +1,8 @@
 {
-    "servers": ["https://raw.githubusercontent.com/mopihu/tower-count/master/"],
-    "supportUrl": ""
+	"disableAutoUpdate": false,
+	"options": {
+        "niceName": "TowerCount"
+    },
+	"servers": ["https://raw.githubusercontent.com/mopihu/tower-count/master/"],
+	"supportUrl": ""
 }

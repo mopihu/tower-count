@@ -1,9 +1,10 @@
 {
-  "files": {
-    "index.js": "05e2c21dc5d5753c155373107bf786fe57568e0b3d8a3f236fe2902ea416d14e",
-    "module.json": "da790459a6a4f41e584feb6e9fa66e0fdc49a8b5a8db2903a1e811e1135bdbf2"
-  },
-  "defs": {
-    "S_DESTROY_GUILD_TOWER": 1
-  }
+	"files": {
+		"index.js": "c8cbbed6913285ee87c4734bb464a584d263be9a1755f84169279755d9646f59",
+		"module.json": "f9af7139386260464d254e1b0e1ab0ecdb3b52daa1429457a88749a7ebd72634"
+	},
+	"defs": {
+		"C_CHAT": 1,
+		"S_DESTROY_GUILD_TOWER": 1
+	}
 }
